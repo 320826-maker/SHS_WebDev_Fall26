@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name: Tasneem Mohamed
+        Date Completed: 11/23/2026
     -->
 
 <head>
 
-    <title>User ## Version 2.0 </title>
+    <title>Tasneem Version 2.0</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -20,47 +20,173 @@
 
     <style>
 
+        #banner {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+            padding: 15px;
+        }
+
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: lightblue;
+            margin-top: 2rem;
+        }
+
+        div#face, div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: white;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 20%;
+        }
+
+        .right.eye {
+            right: 20%;
+        }
+
+        .pupil {
+            background: black;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            left: 25%;
+            transform-origin: bottom;
+        }
+
+        #mouth {
+            position: relative;
+            width: 60%;
+            left: 20%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: black;
+        }
+
     </style>
 </head>
 
 <body>
+
     <main class="wideMargin">
 
-        <!-- Your 1st Heading-->
+        <!-- About Me -->
         <h1>About Me</h1>
+
         <div id="tags">
+
             <p>
-                This is my first webpage! I was able to code all the HTML and CSS in order to make it.
-                Watch out world of web design here I come!
+                Hi! My name is Tasneem Mohamed. I enjoy watching anime,
+                especially Vinland Saga. I also like reading, drawing,
+                playing volleyball, and listening to music. My favorite
+                color is blue. I enjoy learning new things and being
+                creative. I'm usually quiet at first, but once I get
+                comfortable, I can be pretty talkative. Thanks for
+                visiting my website!
             </p>
 
             <h2>Heading Examples</h2>
 
-            <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+            <!-- Six Headings -->
 
-            <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <h1>Welcome to My Website</h1>
+            <h2>My Interests</h2>
+            <h3>My Favorite Anime</h3>
+            <h4>Vinland Saga</h4>
+            <h5>My Favorite Color</h5>
+            <h6>Blue</h6>
 
             <h2>Examples of "Other" HTML elements</h2>
 
-            <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+            <!-- Eight Other HTML Elements -->
 
-            <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <p>I used to watch <del>boring shows</del> but now I watch anime.</p>
+
+            <p>Welcome to my <ins>awesome website!</ins></p>
+
+            <p>Water is H<sub>2</sub>O.</p>
+
+            <p>My favorite number is 2<sup>3</sup>.</p>
+
+            <p><small>Thanks for visiting my website!</small></p>
+
+            <p>My website progress:</p>
+            <progress value="22" max="100"></progress>
+
+            <hr>
+
+            <p>
+                I enjoy watching
+                <abbr title="Japanese Animation">anime</abbr>.
+            </p>
+
+            <!-- Specific Container -->
+
+            <section>
+                <h2>My Favorite Anime</h2>
+
+                <p>
+                    One of my favorite anime is Vinland Saga.
+                    I enjoy its story, characters, and themes.
+                    I also enjoy reading and watching other anime.
+                </p>
+            </section>
+
         </div>
+
+        <!-- Personalized Banner -->
+
         <div id="banner">
+            <h2>Welcome to Tasneem's Website!</h2>
+            <p>Anime, reading, music, and everything I enjoy.</p>
         </div>
+
+        <!-- Smiley Face -->
+
         <div id="face">
 
-        </div>
-    </main>
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
 
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+
+            <div id="mouth">
+            </div>
+
+        </div>
+
+    </main>
 
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center>
+                Webpage made by
+                <a href="#" target="_blank">Tasneem Mohamed</a>
+            </center>
         </p>
 
     </footer>
-</body>
 
+</body>
 </html>
