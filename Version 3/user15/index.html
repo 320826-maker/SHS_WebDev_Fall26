@@ -1,107 +1,154 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 3.0
-        Name:
-        Date Completed:
-    -->
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 
-    <title>Web Dev User ## </title>
-
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Version 3.0">
-
-    <!-- CSS -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- Custom -->
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- JavaScript -->
-    <!-- These are needed to get the responsive menu to work -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            color: #E6E9FF;
+        }
 
-    <!-- Custom styles for this template -->
-    <style type="text/css">
-        footer {
-            font-size: 12px;
+        .home-container {
+            max-width: 850px;
+            margin: 90px auto;
+            padding: 25px;
             text-align: center;
+        }
+
+        .home-title {
+            color: #DCE6FF;
+            font-size: 48px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #AABCEB;
+            font-style: italic;
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+
+        .welcome-card {
+            background: rgba(20, 38, 75, 0.9);
+            border: 1px solid #526B9E;
+            border-radius: 18px;
+            padding: 35px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        .welcome-card h2 {
+            color: #DCE6FF;
+            margin-bottom: 18px;
+        }
+
+        .welcome-card p {
+            color: #C5D4F5;
+            line-height: 1.9;
+            font-size: 17px;
+        }
+
+        .page-links {
+            margin-top: 30px;
+        }
+
+        .page-links a {
+            display: inline-block;
+            color: #E6E9FF;
+            background-color: #243F70;
+            border: 1px solid #829ED6;
+            border-radius: 25px;
+            padding: 10px 22px;
+            margin: 7px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .page-links a:hover {
+            background-color: #526B9E;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            color: #AABCEB;
+            padding: 30px;
         }
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #08152F;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WebDev</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav me-auto">
-                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="aboutMe.html" class="nav-link">About Me</a>
+                        <a class="nav-link" href="aboutMe.html">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="music.html" class="nav-link">Music</a>
+                        <a class="nav-link" href="music.html">Music</a>
                     </li>
                     <li class="nav-item">
-                        <a href="list.html" class="nav-link">Lists</a>
+                        <a class="nav-link" href="list.html">Lists</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
-                    </li>
-                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </ul>
-                <form class="d-flex">
-                    <button class="btn btn-primary" type="button">Login</button>
-                </form>
             </div>
         </div>
     </nav>
-    <!---------------------------------- End the nav-bar ------------------------------------->
 
-    <main class="container-fluid mt-3">
+    <!-- Home Page -->
+    <main class="home-container">
 
-        <h1 class="text-left my-3">Home</h1>
-        <!-- Edit this line for the title of your page -->
+        <h1 class="home-title">Welcome ♡</h1>
+        <p class="subtitle">a little corner of the internet</p>
 
-        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <p>
+        <section class="welcome-card">
+            <h2>Welcome to My Website</h2>
 
-            This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
-        </p>
-        <p>
+            <p>
+                Hi! I'm Tasneem. Welcome to my website!
+                This is where I share a little about myself,
+                my favorite music, and some of the things I enjoy.
+            </p>
 
-            I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
-        </p>
+            <p>
+                Feel free to explore and get to know me better.
+                I hope you enjoy your stay! ✧
+            </p>
+
+            <div class="page-links">
+                <a href="aboutMe.html">About Me</a>
+                <a href="music.html">My Music</a>
+                <a href="list.html">My Lists</a>
+            </div>
+        </section>
+
     </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
-
-    <!---------------------------------- Begin the footer ------------->
     <footer>
-        <div>
-            Webpage made by <a href="#" target="_blank">[your name]</a>
-        </div>
+        <p>Made by Tasneem Mohamed ♡</p>
     </footer>
-    <!---------------------------------- End the footer ------------->
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>

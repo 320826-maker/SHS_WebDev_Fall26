@@ -1,21 +1,69 @@
+
+/* Whole website background */
+body {
+    background-color: #050B24;
+    background-image:
+        radial-gradient(2px 2px at 20px 30px, white, transparent),
+        radial-gradient(2px 2px at 90px 80px, #BFD7FF, transparent),
+        radial-gradient(1px 1px at 150px 40px, white, transparent),
+        radial-gradient(2px 2px at 200px 120px, #DCEBFF, transparent),
+        radial-gradient(1px 1px at 250px 60px, white, transparent),
+        radial-gradient(2px 2px at 300px 160px, #BFD7FF, transparent),
+        linear-gradient(to bottom, #020617, #0B1B45, #142D59);
+    background-size: 350px 200px, 350px 200px, 350px 200px,
+                     350px 200px, 350px 200px, 350px 200px, cover;
+    background-attachment: fixed;
+    color: #EAF2FF;
+}
+
+/* Table */
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	border-spacing: 0px;
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+    color: #EAF2FF;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+    border: 1px solid #BFD7FF;
+    text-align: center;
+    background-color: #172B50;
 }
 
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+    text-align: center;
+    color: white;
+    background-color: #243F70;
+}
+
+/* Ordered list */
+ol {
+    color: #D6E5FF;
+    line-height: 2;
+}
+
+/* Unordered list */
+ul {
+    color: #D6E5FF;
+    list-style-type: square;
+    line-height: 2;
+}
+
+/* Ordered List */
+main ol {
+    color: #DCE6FF;
+    font-family: Georgia, serif;
+    line-height: 2;
+    list-style-type: upper-roman;
+}
+
+/* Unordered List */
+main ul {
+    color: #DCE6FF;
+    font-family: Georgia, serif;
+    line-height: 2;
+    list-style-type: square;
 }

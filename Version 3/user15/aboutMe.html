@@ -1,92 +1,159 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 3.0
-        Name:
-        Date Completed:
-    -->
+<head><link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
 
-<head>
-
-    <title>Web Dev User ## </title>
-
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Version 3.0">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- JavaScript -->
-    <!-- These are needed to get the responsive menu to work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- Custom styles for this template -->
-    <style type="text/css">
-        menu {
-            margin: 0;
-            padding: 0;
+    <style>
+        body {
+            font-family: Georgia, serif;
+            color: #E6E9FF;
         }
 
-        .wideMargin {
-            margin: 15px;
+        .about-container {
+            max-width: 850px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .about-title {
+            text-align: center;
+            color: #DCE6FF;
+            font-size: 42px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #AABCEB;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+
+        .about-card {
+            background: rgba(20, 38, 75, 0.9);
+            border: 1px solid #526B9E;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 22px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        .about-card h2 {
+            color: #DCE6FF;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .about-card p,
+        .about-card li {
+            color: #C5D4F5;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .about-card ul {
+            padding-left: 25px;
+        }
+
+        .highlight {
+            color: #AFC8FF;
         }
 
         footer {
-            font-size: 12px;
             text-align: center;
+            color: #AABCEB;
+            padding: 30px;
         }
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------------------------------------>
-    <menu>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #08152F;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WebDev</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="aboutMe.html" class="nav-item nav-link active">About Me</a>
-                    <a href="music.html" class="nav-item nav-link">Music</a>
-                    <a href="list.html" class="nav-item nav-link">Lists</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
-                        tabindex="-1">Contact</a>
-                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-                </div>
-                <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link disabled">Login</a>
-                </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="aboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="music.html">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">Lists</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <!---------------------------------- End the nav-bar ------------------------------------->
-    </menu>
+        </div>
+    </nav>
 
-    <main class="wideMargin">
+    <!-- About Me -->
+    <main class="about-container">
 
-        <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
+        <h1 class="about-title">About Me</h1>
+        <p class="subtitle">a little bit about who I am ♡</p>
 
-        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <section class="about-card">
+            <h2>♡ Hello!</h2>
+            <p>
+                Hi, my name is <span class="highlight">Tasneem Mohamed</span>.
+                I'm someone who enjoys learning new things and spending time
+                doing the things I love.
+            </p>
+        </section>
 
-        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+        <section class="about-card">
+            <h2>✧ My Interests</h2>
+            <ul>
+                <li>Watching anime, especially <span class="highlight">Vinland Saga</span></li>
+                <li>Reading</li>
+                <li>Playing volleyball</li>
+                <li>Drawing when inspiration shows up</li>
+            </ul>
+        </section>
+
+        <section class="about-card">
+            <h2>☾ My Favorite Things</h2>
+            <p>
+                My favorite color is <span class="highlight">blue</span>.
+                I also enjoy listening to music and discovering new artists.
+            </p>
+        </section>
+
+        <section class="about-card">
+            <h2>✦ Favorite Artists</h2>
+            <p>
+                Some artists I listen to are Tyler, the Creator, Laufey,
+                TV Girl, Conan Gray, Chase Atlantic, Marina, Julia Wolf,
+                PartyNextDoor, Bryson Tiller, and A Boogie Wit da Hoodie.
+            </p>
+        </section>
+
     </main>
 
-    <!---------------------------------- Begin the footer ------------->
-    <footer class="wideMargin">
-        <div>
-            Webpage made by <a href="#" target="_blank">[your name]</a>
-        </div>
+    <footer>
+        <p>Made by Tasneem Mohamed ♡</p>
     </footer>
-    <!---------------------------------- End the footer ------------->
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
